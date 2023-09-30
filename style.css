@@ -1,0 +1,315 @@
+
+/*Background*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; 
+    background-color: #050505; 
+  }
+  
+/* navigasi bar */
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 80px;
+  background-color: #050505;
+  position: sticky;
+  top: 0;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+#navbar a:hover {
+  background-color: #091235;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ /*Home */ 
+
+#Home div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  width: 100%; 
+}
+
+.home_container {
+
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: flex-start; 
+  height: 100vh; 
+
+  
+}
+
+
+.home_container h1 {
+  font-size: 50px; 
+  color: white;
+  margin: 0px 0;
+}
+
+.home_container h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  margin: 5px 0;
+}
+
+.home_container h3 {
+  font-size: 25px; 
+  color: white;
+  margin: 5px 0;
+}
+
+.home_container h3 a {
+  color: #88A9C3; 
+  padding: 0px 10px; 
+  margin-right: 0px; 
+  border-radius: 5px;
+}
+
+.home_container h3 a:hover {
+  color: #091235; 
+  background-color: #88A9C3;
+}
+
+/* About */
+
+#about {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about_title h1 {
+  align-items: center;
+  font-size: 50px;
+  color: #88A9C3;
+  position: relative;
+}
+
+.about_title h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1300px; 
+  border-bottom: 1px solid #88A9C3; 
+}
+
+.about_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: column;
+  margin-top: 20px; 
+}
+
+.about_img img {
+  width: 200px;
+  height: 266px;
+  margin-right: 20px; 
+  border-radius: 15px; 
+}
+
+.about_teks p {
+  font-size: 24px;
+  color: white;
+  max-width: 500px; 
+  margin: 0; 
+  text-align: left;
+}
+
+.about_teks p:last-child {
+  margin-bottom: 0; 
+}
+
+@media (max-width: 500px) {
+  .about_container {
+    flex-direction: column; 
+    align-items: center; 
+
+  .about_img img {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+}
+}
+/* Skills */
+
+#skills {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills_title h2 {
+  font-size: 50px;
+  color: #88A9C3;
+  position: relative;
+}
+
+.skills_title h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1300px; 
+  border-bottom: 1px solid #88A9C3; 
+}
+
+.skill_list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill_list li {
+  display: inline-flex;
+  margin-top: 24px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 24px;
+  color: white;
+  position: relative; 
+}
+
+.skill_list li:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 300px; 
+  border-bottom: 2px solid #88A9C3;
+}
+
+
+
+/* Contact */
+#contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+}
+
+.contact_title{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact_title h1 {
+  color: #88A9C3;
+  font-size: 36px;
+  position: relative;
+}
+
+.contact_title h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1300px; 
+  border-bottom: 1px solid #88A9C3; 
+}
+
+
+.contact_title p {
+  font-size: 18px;
+  color: white;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form_group label {
+  font-size: 18px;
+  color: #88A9C3;
+  display: block;
+}
+
+.form_group input {
+  width: 200%;
+  height: 50px; 
+  padding: 24px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  background-color: #f0f0f0;
+  color: #678297;
+  font-size: 18px;
+}
+
+
+
+.submit_button {
+  background-color: #88A9C3;
+  color: #091235;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi */
+}
+
+/* hover, ganti background */
+
+.submit_button:hover {
+   padding: 10px 20px;
+  font-size: 18px;
+  align-items: center;
+  color: #88A9C3;
+  background-color: #091235;
+}
+
+/* ubah ukuran tombol */
+.submit-button:active {
+  transform: scale(0.95);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; 
+}
+
+.footer_links {
+  display: flex;
+  align-items: center;
+}
+
+.footer_links a {
+  margin: 0 10px; 
+}
